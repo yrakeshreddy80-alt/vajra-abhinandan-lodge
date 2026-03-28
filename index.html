@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vajra Abhinandan Lodge | Premium Stay Near Gadwal</title>
+<meta name="description" content="Vajra Abhinandan Lodge - Premium AC rooms, banquet halls, and modern amenities near Gadwal Town, Jammichedu. Your comfort is our priority.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --gold: #C6A664;
+  --gold-light: #D4BC8A;
+  --gold-dark: #A8873E;
+  --midnight: #1A1A2E;
+  --charcoal: #2D2D3F;
+  --warm-black: #0F0F1A;
+  --cream: #FAF6F0;
+  --cream-dark: #EDE6DA;
+  --warm-white: #FFFCF7;
+  --text-dark: #2C2C2C;
+  --text-light: #F5F0E8;
+  --text-muted: #8A8A9A;
+  --section-dark: #16161F;
+  --section-light: #FDFAF5;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Outfit', sans-serif;
+  color: var(--text-dark);
+  background: var(--warm-white);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============ UTILITY ============ */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.section-label {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+  display: block;
+}
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.section-desc {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #666;
+  max-width: 600px;
+}
+
+/* ============ ANIMATIONS ============ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes slideRight {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.15s; }
+.reveal-delay-2 { transition-delay: 0.3s; }
+.reveal-delay-3 { transition-delay: 0.45s; }
+.reveal-delay-4 { transition-delay: 0.6s; }
+
+/* ============ NAVBAR ============ */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 20px 0;
+  transition: all 0.4s ease;
+}
+.navbar.scrolled {
+  background: rgba(15, 15, 26, 0.95);
+  backdrop-filter: blur(20px);
+  padding: 12px 0;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+.logo-icon {
+  width: 42px;
+  height: 42px;
+  border: 2px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--gold);
+  position: relative;
+}
+.logo-icon::before {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  border: 1px solid var(--gold-light);
+  opacity: 0.5;
+}
+.logo-text {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 1.15rem;
+  color: var(--text-light);
+  letter-spacing: 1px;
+}
+.logo-text span { color: var(--gold); }
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+.nav-links a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  opacity: 0.8;
+  transition: all 0.3s;
+  position: relative;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--gold);
+  transition: width 0.3s;
+}
+.nav-links a:hover { opacity: 1; color: var(--gold); }
+.nav-links a:hover::after { width: 100%; }
+.nav-cta {
+  padding: 10px 28px;
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold) !important;
+  font-size: 0.8rem !important;
+  letter-spacing: 2px !important;
+  cursor: pointer;
+  transition: all 0.3s !important;
+  opacity: 1 !important;
+}
+.nav-cta:hover {
+  background: var(--gold) !important;
+  color: var(--warm-black) !important;
+}
+.nav-cta::after { display: none !important; }
+
+.mobile-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 1001;
+}
+.mobile-toggle span {
+  width: 24px;
+  height: 2px;
+  background: var(--text-light);
+  transition: all 0.3s;
+}
+
+/* ============ HERO ============ */
+.hero {
+  min-height: 100vh;
+  background: var(--warm-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(198, 166, 100, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(198, 166, 100, 0.05) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(45, 45, 63, 0.8) 0%, transparent 60%);
+}
+.hero-pattern {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(198, 166, 100, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(198, 166, 100, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+.hero-content {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding: 0 24px;
+  animation: fadeUp 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 24px;
+  border: 1px solid rgba(198, 166, 100, 0.3);
+  margin-bottom: 40px;
+  animation: fadeIn 1s ease 0.3s both;
+}
+.hero-badge-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+}
+.hero-badge span {
+  font-size: 0.72rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+.hero-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 32px;
+  animation: fadeIn 1s ease 0.5s both;
+}
+.hero-ornament-line {
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+.hero-ornament svg { color: var(--gold); }
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  font-weight: 400;
+  color: var(--text-light);
+  line-height: 1.1;
+  margin-bottom: 12px;
+  letter-spacing: -1px;
+}
+.hero h1 em {
+  font-style: italic;
+  color: var(--gold);
+  font-weight: 500;
+}
+.hero-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  color: var(--text-muted);
+  margin-bottom: 48px;
+  letter-spacing: 1px;
+  animation: fadeIn 1s ease 0.8s both;
+}
+.hero-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeUp 1s ease 1s both;
+}
+.btn-primary {
+  padding: 16px 48px;
+  background: var(--gold);
+  color: var(--warm-black);
+  border: none;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.4s;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-primary:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(198, 166, 100, 0.25);
+}
+.btn-secondary {
+  padding: 16px 48px;
+  background: transparent;
+  color: var(--text-light);
+  border: 1px solid rgba(255,255,255,0.2);
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.4s;
+  text-decoration: none;
+}
+.btn-secondary:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+.hero-scroll {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  animation: float 3s ease-in-out infinite;
+  z-index: 2;
+}
+.hero-scroll span {
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.hero-scroll-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+}
+
+/* ============ WELCOME / ABOUT ============ */
+.welcome {
+  padding: 120px 0;
+  background: var(--warm-white);
+  position: relative;
+}
+.welcome-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.welcome-visual {
+  position: relative;
+}
+.welcome-img-main {
+  width: 100%;
+  aspect-ratio: 4/5;
+  background: linear-gradient(135deg, var(--cream-dark) 0%, #DDD5C8 100%);
+  position: relative;
+  overflow: hidden;
+}
+.welcome-img-main::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(198, 166, 100, 0.15), transparent 60%),
+    url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 0L80 40L40 80L0 40Z' fill='none' stroke='%23C6A664' stroke-width='0.5' opacity='0.1'/%3E%3C/svg%3E");
+}
+.welcome-img-main .img-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--gold-dark);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  opacity: 0.6;
+}
+.welcome-img-main .img-placeholder svg {
+  width: 48px;
+  height: 48px;
+  stroke: var(--gold-dark);
+  opacity: 0.4;
+}
+.welcome-img-accent {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--warm-white);
+}
+.welcome-img-accent-inner {
+  text-align: center;
+  padding: 20px;
+}
+.welcome-img-accent-inner .number {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--gold);
+  line-height: 1;
+}
+.welcome-img-accent-inner .label {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+.welcome-text { padding-right: 20px; }
+.welcome-text .section-desc { margin-bottom: 36px; }
+.welcome-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 40px;
+}
+.welcome-feature {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.welcome-feature-icon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(198, 166, 100, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--gold);
+}
+.welcome-feature span {
+  font-size: 0.88rem;
+  color: #555;
+  font-weight: 400;
+}
+
+/* ============ HIGHLIGHTS BAR ============ */
+.highlights {
+  background: var(--midnight);
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+.highlights::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(198, 166, 100, 0.05), transparent 30%, transparent 70%, rgba(198, 166, 100, 0.05));
+}
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  position: relative;
+}
+.highlight-item {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+.highlight-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 20%;
+  height: 60%;
+  width: 1px;
+  background: rgba(198, 166, 100, 0.2);
+}
+.highlight-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.highlight-text {
+  font-size: 0.78rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* ============ ROOMS ============ */
+.rooms {
+  padding: 120px 0;
+  background: var(--section-light);
+}
+.rooms-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.rooms-header .section-desc { margin: 0 auto; }
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.room-card {
+  background: var(--warm-white);
+  border: 1px solid rgba(0,0,0,0.06);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  overflow: hidden;
+}
+.room-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+  border-color: rgba(198, 166, 100, 0.2);
+}
+.room-img {
+  aspect-ratio: 4/3;
+  background: linear-gradient(135deg, var(--cream-dark), #D5CEC2);
+  position: relative;
+  overflow: hidden;
+}
+.room-img::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.1));
+}
+.room-img .img-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--gold-dark);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.9rem;
+  opacity: 0.5;
+}
+.room-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 6px 16px;
+  background: var(--gold);
+  color: var(--warm-black);
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.room-info { padding: 28px; }
+.room-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: var(--text-dark);
+}
+.room-desc {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.room-amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.room-amenity {
+  padding: 5px 12px;
+  background: var(--cream);
+  font-size: 0.72rem;
+  letter-spacing: 0.5px;
+  color: #666;
+}
+.room-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+.room-price {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  color: var(--gold-dark);
+}
+.room-price small {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+.room-book {
+  padding: 10px 24px;
+  border: 1px solid var(--gold);
+  background: transparent;
+  color: var(--gold-dark);
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.room-book:hover {
+  background: var(--gold);
+  color: var(--warm-black);
+}
+
+/* ============ BANQUET ============ */
+.banquet {
+  padding: 120px 0;
+  background: var(--warm-black);
+  color: var(--text-light);
+  position: relative;
+  overflow: hidden;
+}
+.banquet::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 30% 70%, rgba(198, 166, 100, 0.06), transparent 60%),
+    radial-gradient(ellipse at 70% 30%, rgba(198, 166, 100, 0.04), transparent 50%);
+}
+.banquet .container { position: relative; z-index: 1; }
+.banquet-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-top: 60px;
+}
+.banquet-card {
+  border: 1px solid rgba(198, 166, 100, 0.15);
+  padding: 48px;
+  position: relative;
+  transition: all 0.4s;
+}
+.banquet-card:hover {
+  border-color: rgba(198, 166, 100, 0.4);
+  background: rgba(198, 166, 100, 0.03);
+}
+.banquet-card-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: rgba(198, 166, 100, 0.15);
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.banquet-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: var(--cream);
+}
+.banquet-card p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+.banquet-card-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.banquet-card-feature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: var(--gold-light);
+}
+.banquet-card-feature svg {
+  width: 14px;
+  height: 14px;
+  color: var(--gold);
+}
+.banquet .section-desc { color: var(--text-muted); }
+
+/* ============ AMENITIES ============ */
+.amenities {
+  padding: 120px 0;
+  background: var(--warm-white);
+}
+.amenities-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.amenities-header .section-desc { margin: 0 auto; }
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.amenity-card {
+  text-align: center;
+  padding: 48px 32px;
+  border: 1px solid transparent;
+  transition: all 0.4s;
+  position: relative;
+}
+.amenity-card:hover {
+  border-color: rgba(198, 166, 100, 0.2);
+  background: var(--section-light);
+}
+.amenity-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 24px;
+  border: 1px solid rgba(198, 166, 100, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  position: relative;
+}
+.amenity-icon::before {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border: 1px solid rgba(198, 166, 100, 0.15);
+}
+.amenity-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.amenity-card p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  color: #777;
+  line-height: 1.6;
+}
+
+/* ============ GALLERY TEASER ============ */
+.gallery {
+  padding: 100px 0 120px;
+  background: var(--section-light);
+}
+.gallery-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 250px 250px;
+  gap: 16px;
+}
+.gallery-item {
+  background: var(--cream-dark);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.gallery-item:hover { transform: scale(0.98); }
+.gallery-item:first-child { grid-row: 1 / -1; }
+.gallery-item .img-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--gold-dark);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.9rem;
+  opacity: 0.4;
+}
+.gallery-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(198, 166, 100, 0.1);
+  pointer-events: none;
+}
+
+/* Image handling */
+.has-img .img-placeholder { display: none; }
+.real-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.welcome-img-main .real-img,
+.room-img .real-img,
+.gallery-item .real-img {
+  position: absolute;
+  inset: 0;
+}
+.hero-real-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+/* ============ TESTIMONIALS ============ */
+.testimonials {
+  padding: 120px 0;
+  background: var(--midnight);
+  color: var(--text-light);
+  position: relative;
+  overflow: hidden;
+}
+.testimonials::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(198, 166, 100, 0.04), transparent 70%);
+}
+.testimonials-header { text-align: center; margin-bottom: 70px; position: relative; }
+.testimonials .section-desc { color: var(--text-muted); margin: 0 auto; }
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  position: relative;
+}
+.testimonial-card {
+  padding: 40px;
+  border: 1px solid rgba(198, 166, 100, 0.12);
+  transition: all 0.4s;
+}
+.testimonial-card:hover {
+  border-color: rgba(198, 166, 100, 0.3);
+  background: rgba(198, 166, 100, 0.03);
+}
+.testimonial-stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 20px;
+  color: var(--gold);
+}
+.testimonial-card blockquote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--cream-dark);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.testimonial-avatar {
+  width: 44px;
+  height: 44px;
+  background: rgba(198, 166, 100, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  color: var(--gold);
+}
+.testimonial-name {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--cream);
+}
+.testimonial-role {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* ============ LOCATION ============ */
+.location {
+  padding: 120px 0;
+  background: var(--warm-white);
+}
+.location-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.location-map {
+  aspect-ratio: 1;
+  background: var(--cream-dark);
+  border: 1px solid rgba(0,0,0,0.06);
+  position: relative;
+  overflow: hidden;
+}
+.location-map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  filter: saturate(0.8) contrast(1.05);
+}
+.location-info { padding: 20px 0; }
+.location-details {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.location-detail {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.location-detail-icon {
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(198, 166, 100, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--gold);
+}
+.location-detail-text h4 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.location-detail-text p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  color: #777;
+}
+.location-directions {
+  margin-top: 36px;
+}
+.location-directions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 36px;
+  background: var(--gold);
+  color: var(--warm-black);
+  text-decoration: none;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.location-directions a:hover {
+  background: var(--gold-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(198, 166, 100, 0.2);
+}
+
+/* ============ CONTACT / CTA ============ */
+.contact-cta {
+  padding: 120px 0;
+  background: var(--warm-black);
+  text-align: center;
+  color: var(--text-light);
+  position: relative;
+  overflow: hidden;
+}
+.contact-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at center, rgba(198, 166, 100, 0.06) 0%, transparent 70%);
+}
+.contact-cta .container { position: relative; }
+.contact-cta .section-title { color: var(--cream); }
+.contact-cta .section-desc {
+  margin: 0 auto 48px;
+  color: var(--text-muted);
+}
+.contact-methods {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+.contact-method {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  border: 1px solid rgba(198, 166, 100, 0.2);
+  text-decoration: none;
+  color: var(--cream-dark);
+  transition: all 0.3s;
+}
+.contact-method:hover {
+  border-color: var(--gold);
+  background: rgba(198, 166, 100, 0.05);
+}
+.contact-method svg { color: var(--gold); }
+.contact-method-label {
+  font-size: 0.68rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+}
+.contact-method-value {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+}
+
+/* ============ FOOTER ============ */
+.footer {
+  background: #0A0A14;
+  padding: 60px 0 30px;
+  color: var(--text-muted);
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.footer-brand .logo { margin-bottom: 16px; }
+.footer-tagline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  color: var(--text-muted);
+  max-width: 280px;
+}
+.footer-links {
+  display: flex;
+  gap: 60px;
+}
+.footer-col h4 {
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+.footer-col a {
+  display: block;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.88rem;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+.footer-col a:hover { color: var(--cream); }
+.footer-bottom {
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 1024px) {
+  .welcome-grid { grid-template-columns: 1fr; gap: 60px; }
+  .rooms-grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 300px 200px 200px; }
+  .gallery-item:first-child { grid-row: 1; grid-column: 1 / -1; }
+}
+
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .mobile-toggle { display: flex; }
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(15, 15, 26, 0.98);
+    backdrop-filter: blur(20px);
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    z-index: 999;
+  }
+  .nav-links.open a { font-size: 1.1rem; opacity: 1; }
+  .highlights-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .highlight-item:nth-child(2)::after { display: none; }
+  .rooms-grid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
+  .banquet-grid { grid-template-columns: 1fr; }
+  .amenities-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+  .testimonials-grid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
+  .location-grid { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: 1fr; grid-template-rows: repeat(5, 200px); }
+  .gallery-item:first-child { grid-column: 1; }
+  .contact-methods { flex-direction: column; align-items: center; }
+  .footer-top { flex-direction: column; }
+  .footer-links { gap: 40px; }
+  .welcome-features { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 2.5rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="#" class="logo">
+      <div class="logo-icon">VA</div>
+      <div class="logo-text">Vajra <span>Abhinandan</span></div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#rooms">Rooms</a></li>
+      <li><a href="#banquet">Banquet</a></li>
+      <li><a href="#amenities">Amenities</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="tel:+919876543210" class="nav-cta">Book Now</a></li>
+    </ul>
+    <div class="mobile-toggle" id="mobileToggle" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="hero">
+  <img src="images/hero-bg.jpg" alt="Vajra Abhinandan Lodge" class="hero-real-bg" onerror="this.style.display='none'">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <div class="hero-badge-dot"></div>
+      <span>Premium Hospitality in Gadwal</span>
+    </div>
+    <div class="hero-ornament">
+      <div class="hero-ornament-line"></div>
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 0L12.5 7.5L20 10L12.5 12.5L10 20L7.5 12.5L0 10L7.5 7.5L10 0Z" fill="currentColor" opacity="0.6"/></svg>
+      <div class="hero-ornament-line"></div>
+    </div>
+    <h1>Vajra Abhinandan<br><em>Lodge</em></h1>
+    <p class="hero-subtitle">Where Comfort Meets Elegance — Jammichedu, Near Gadwal Town</p>
+    <div class="hero-actions">
+      <a href="tel:+919876543210" class="btn-primary">Reserve Your Stay</a>
+      <a href="#rooms" class="btn-secondary">Explore Rooms</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+<!-- ========== WELCOME ========== -->
+<section class="welcome" id="about">
+  <div class="container">
+    <div class="welcome-grid">
+      <div class="welcome-visual reveal">
+        <div class="welcome-img-main">
+          <img src="images/hotel-exterior.jpg" alt="Vajra Abhinandan Lodge Exterior" class="real-img" onerror="this.parentElement.classList.remove('has-img');this.style.display='none'" onload="this.parentElement.classList.add('has-img')">
+          <div class="img-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Hotel Exterior Photo</span>
+          </div>
+        </div>
+        <div class="welcome-img-accent">
+          <div class="welcome-img-accent-inner">
+            <div class="number">24/7</div>
+            <div class="label">Guest Service</div>
+          </div>
+        </div>
+      </div>
+      <div class="welcome-text">
+        <span class="section-label reveal">Welcome</span>
+        <h2 class="section-title reveal reveal-delay-1">A New Standard of<br>Comfort in Gadwal</h2>
+        <p class="section-desc reveal reveal-delay-2">
+          Vajra Abhinandan Lodge brings a fresh, premium hospitality experience to Jammichedu, near Gadwal Town. Since our opening, we have been dedicated to providing our guests with modern amenities, warm service, and a tranquil environment — whether you're here for business, celebrations, or a restful getaway.
+        </p>
+        <div class="welcome-features reveal reveal-delay-3">
+          <div class="welcome-feature">
+            <div class="welcome-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1"/></svg>
+            </div>
+            <span>Premium AC Rooms</span>
+          </div>
+          <div class="welcome-feature">
+            <div class="welcome-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/></svg>
+            </div>
+            <span>2 Banquet Halls</span>
+          </div>
+          <div class="welcome-feature">
+            <div class="welcome-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <span>Generator Backup</span>
+          </div>
+          <div class="welcome-feature">
+            <div class="welcome-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <span>Friendly Staff</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== HIGHLIGHTS ========== -->
+<section class="highlights">
+  <div class="container">
+    <div class="highlights-grid">
+      <div class="highlight-item reveal">
+        <div class="highlight-number">30+</div>
+        <div class="highlight-text">Premium Rooms</div>
+      </div>
+      <div class="highlight-item reveal reveal-delay-1">
+        <div class="highlight-number">2</div>
+        <div class="highlight-text">Banquet Halls</div>
+      </div>
+      <div class="highlight-item reveal reveal-delay-2">
+        <div class="highlight-number">500+</div>
+        <div class="highlight-text">Happy Guests</div>
+      </div>
+      <div class="highlight-item reveal reveal-delay-3">
+        <div class="highlight-number">24/7</div>
+        <div class="highlight-text">Guest Support</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ROOMS ========== -->
+<section class="rooms" id="rooms">
+  <div class="container">
+    <div class="rooms-header">
+      <span class="section-label reveal">Accommodation</span>
+      <h2 class="section-title reveal reveal-delay-1">Our Premium Rooms</h2>
+      <p class="section-desc reveal reveal-delay-2">Each room is thoughtfully designed with modern comforts and elegant interiors to ensure a memorable stay.</p>
+    </div>
+    <div class="rooms-grid">
+      <div class="room-card reveal">
+        <div class="room-img">
+          <img src="images/room-standard.jpg" alt="Standard AC Room" class="real-img" onerror="this.parentElement.classList.remove('has-img');this.style.display='none'" onload="this.parentElement.classList.add('has-img')">
+          <div class="img-placeholder">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Room Photo</span>
+          </div>
+        </div>
+        <div class="room-info">
+          <h3 class="room-name">Standard AC Room</h3>
+          <p class="room-desc">Comfortable and well-appointed room with all essential amenities for a relaxing stay.</p>
+          <div class="room-amenities">
+            <span class="room-amenity">Air Conditioned</span>
+            <span class="room-amenity">Wi-Fi</span>
+            <span class="room-amenity">TV</span>
+            <span class="room-amenity">Hot Water</span>
+          </div>
+          <div class="room-footer">
+            <div class="room-price">₹1,499 <small>/ night</small></div>
+            <a href="tel:+919876543210" class="room-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="room-card reveal reveal-delay-1">
+        <div class="room-img">
+          <div class="room-badge">Popular</div>
+          <img src="images/room-deluxe.jpg" alt="Deluxe AC Room" class="real-img" onerror="this.parentElement.classList.remove('has-img');this.style.display='none'" onload="this.parentElement.classList.add('has-img')">
+          <div class="img-placeholder">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Room Photo</span>
+          </div>
+        </div>
+        <div class="room-info">
+          <h3 class="room-name">Deluxe AC Room</h3>
+          <p class="room-desc">Spacious room with premium furnishings, ideal for both business and leisure travellers.</p>
+          <div class="room-amenities">
+            <span class="room-amenity">Air Conditioned</span>
+            <span class="room-amenity">Wi-Fi</span>
+            <span class="room-amenity">Smart TV</span>
+            <span class="room-amenity">Mini Fridge</span>
+            <span class="room-amenity">Hot Water</span>
+          </div>
+          <div class="room-footer">
+            <div class="room-price">₹2,499 <small>/ night</small></div>
+            <a href="tel:+919876543210" class="room-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="room-card reveal reveal-delay-2">
+        <div class="room-img">
+          <div class="room-badge">Premium</div>
+          <img src="images/room-suite.jpg" alt="Suite Room" class="real-img" onerror="this.parentElement.classList.remove('has-img');this.style.display='none'" onload="this.parentElement.classList.add('has-img')">
+          <div class="img-placeholder">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Room Photo</span>
+          </div>
+        </div>
+        <div class="room-info">
+          <h3 class="room-name">Suite Room</h3>
+          <p class="room-desc">Our finest accommodation with separate living area, premium amenities, and extra space for families.</p>
+          <div class="room-amenities">
+            <span class="room-amenity">Air Conditioned</span>
+            <span class="room-amenity">Wi-Fi</span>
+            <span class="room-amenity">55" Smart TV</span>
+            <span class="room-amenity">Mini Fridge</span>
+            <span class="room-amenity">Sofa Set</span>
+            <span class="room-amenity">Hot Water</span>
+          </div>
+          <div class="room-footer">
+            <div class="room-price">₹3,999 <small>/ night</small></div>
+            <a href="tel:+919876543210" class="room-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== BANQUET ========== -->
+<section class="banquet" id="banquet">
+  <div class="container">
+    <span class="section-label reveal">Events & Celebrations</span>
+    <h2 class="section-title reveal reveal-delay-1" style="color: var(--cream);">Our Banquet Halls</h2>
+    <p class="section-desc reveal reveal-delay-2">Two elegantly designed banquet halls, perfect for weddings, receptions, corporate events, and family celebrations — supported by our dedicated kitchen.</p>
+    <div class="banquet-grid">
+      <div class="banquet-card reveal">
+        <div class="banquet-card-num">01</div>
+        <h3>Grand Banquet Hall</h3>
+        <p>Our spacious grand hall accommodates large gatherings with elegant décor, professional lighting, and a sound system — ideal for weddings and grand receptions.</p>
+        <div class="banquet-card-features">
+          <div class="banquet-card-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Up to 300 Guests
+          </div>
+          <div class="banquet-card-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Stage & Lighting
+          </div>
+          <div class="banquet-card-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Dedicated Kitchen
+          </div>
+          <div class="banquet-card-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            AC & Ventilation
+          </div>
+        </div>
+      </div>
+      <div class="banquet-card reveal reveal-delay-1">
+        <div class="banquet-card-num">02</div>
+        <h3>Conference Hall</h3>
+        <p>A versatile mid-size hall perfect for corporate meetings, birthday parties, engagement ceremonies, and intimate family gatherings.</p>
+        <div class="banquet-card-features">
+          <div class="banquet-card-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Up to 100 Guests
+          </div>
+          <div class="banquet-card-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Projector & Screen
+          </div>
+          <div class="banquet-card-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Catering Available
+          </div>
+          <div class="banquet-card-feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Sound System
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== AMENITIES ========== -->
+<section class="amenities" id="amenities">
+  <div class="container">
+    <div class="amenities-header">
+      <span class="section-label reveal">Facilities</span>
+      <h2 class="section-title reveal reveal-delay-1">Modern Amenities</h2>
+      <p class="section-desc reveal reveal-delay-2">Everything you need for a comfortable, hassle-free stay under one roof.</p>
+    </div>
+    <div class="amenities-grid">
+      <div class="amenity-card reveal">
+        <div class="amenity-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+        </div>
+        <h3>24/7 Power Backup</h3>
+        <p>Full generator support ensures uninterrupted power supply for your comfort at all times.</p>
+      </div>
+      <div class="amenity-card reveal reveal-delay-1">
+        <div class="amenity-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+        </div>
+        <h3>Elevator Access</h3>
+        <p>Modern lift facilities for convenient and effortless access to all floors of the lodge.</p>
+      </div>
+      <div class="amenity-card reveal reveal-delay-2">
+        <div class="amenity-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+        </div>
+        <h3>Wide Parking</h3>
+        <p>Ample, secure parking space for cars, bikes, and larger vehicles — right at the premises.</p>
+      </div>
+      <div class="amenity-card reveal reveal-delay-1">
+        <div class="amenity-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+        </div>
+        <h3>Dedicated Kitchen</h3>
+        <p>Our in-house kitchen serves fresh, hygienic meals — from local flavours to multi-cuisine catering for events.</p>
+      </div>
+      <div class="amenity-card reveal reveal-delay-2">
+        <div class="amenity-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.858 15.355-5.858 21.213 0"/></svg>
+        </div>
+        <h3>Free Wi-Fi</h3>
+        <p>Complimentary high-speed internet access throughout the lodge for all guests.</p>
+      </div>
+      <div class="amenity-card reveal reveal-delay-3">
+        <div class="amenity-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        </div>
+        <h3>Safe & Secure</h3>
+        <p>CCTV surveillance and professional security staff to ensure your safety round the clock.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== GALLERY ========== -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="gallery-header">
+      <span class="section-label reveal">Gallery</span>
+      <h2 class="section-title reveal reveal-delay-1">A Glimpse of Our Lodge</h2>
+    </div>
+    <div class="gallery-grid reveal reveal-delay-2">
+      <div class="gallery-item">
+        <img src="images/gallery-exterior.jpg" alt="Lodge Exterior" class="real-img" onerror="this.parentElement.classList.remove('has-img');this.style.display='none'" onload="this.parentElement.classList.add('has-img')">
+        <div class="img-placeholder">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>Lodge Exterior</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery-banquet.jpg" alt="Banquet Hall" class="real-img" onerror="this.parentElement.classList.remove('has-img');this.style.display='none'" onload="this.parentElement.classList.add('has-img')">
+        <div class="img-placeholder">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>Banquet Hall</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery-room.jpg" alt="Deluxe Room" class="real-img" onerror="this.parentElement.classList.remove('has-img');this.style.display='none'" onload="this.parentElement.classList.add('has-img')">
+        <div class="img-placeholder">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>Deluxe Room</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery-parking.jpg" alt="Parking Area" class="real-img" onerror="this.parentElement.classList.remove('has-img');this.style.display='none'" onload="this.parentElement.classList.add('has-img')">
+        <div class="img-placeholder">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>Parking Area</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery-reception.jpg" alt="Reception" class="real-img" onerror="this.parentElement.classList.remove('has-img');this.style.display='none'" onload="this.parentElement.classList.add('has-img')">
+        <div class="img-placeholder">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>Reception</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TESTIMONIALS ========== -->
+<section class="testimonials">
+  <div class="container">
+    <div class="testimonials-header">
+      <span class="section-label reveal">Guest Reviews</span>
+      <h2 class="section-title reveal reveal-delay-1" style="color: var(--cream);">What Our Guests Say</h2>
+      <p class="section-desc reveal reveal-delay-2">Hear from the travellers and families who have experienced our hospitality first-hand.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.39 6.34H19l-5.3 3.83L15.67 18 10 14.27 4.33 18l1.97-6.83L1 7.34h6.61z"/></svg>
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.39 6.34H19l-5.3 3.83L15.67 18 10 14.27 4.33 18l1.97-6.83L1 7.34h6.61z"/></svg>
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.39 6.34H19l-5.3 3.83L15.67 18 10 14.27 4.33 18l1.97-6.83L1 7.34h6.61z"/></svg>
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.39 6.34H19l-5.3 3.83L15.67 18 10 14.27 4.33 18l1.97-6.83L1 7.34h6.61z"/></svg>
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.39 6.34H19l-5.3 3.83L15.67 18 10 14.27 4.33 18l1.97-6.83L1 7.34h6.61z"/></svg>
+        </div>
+        <blockquote>"Best hotel experience near Gadwal. Rooms were clean, staff was very helpful, and the AC worked perfectly. Will definitely stay again!"</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">RK</div>
+          <div>
+            <div class="testimonial-name">Rajesh Kumar</div>
+            <div class="testimonial-role">Business Traveller</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="testimonial-stars">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.39 6.34H19l-5.3 3.83L15.67 18 10 14.27 4.33 18l1.97-6.83L1 7.34h6.61z"/></svg>
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.39 6.34H19l-5.3 3.83L15.67 18 10 14.27 4.33 18l1.97-6.83L1 7.34h6.61z"/></svg>
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.39 6.34H19l-5.3 3.83L15.67 18 10 14.27 4.33 18l1.97-6.83L1 7.34h6.61z"/></svg>
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.39 6.34H19l-5.3 3.83L15.67 18 10 14.27 4.33 18l1.97-6.83L1 7.34h6.61z"/></svg>
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.39 6.34H19l-5.3 3.83L15.67 18 10 14.27 4.33 18l1.97-6.83L1 7.34h6.61z"/></svg>
+        </div>
+        <blockquote>"We hosted our daughter's engagement here. The banquet hall was beautifully set up and the food from their kitchen was outstanding. Highly recommended!"</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">SP</div>
+          <div>
+            <div class="testimonial-name">Srinivas Patil</div>
+            <div class="testimonial-role">Family Event</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="testimonial-stars">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.39 6.34H19l-5.3 3.83L15.67 18 10 14.27 4.33 18l1.97-6.83L1 7.34h6.61z"/></svg>
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.39 6.34H19l-5.3 3.83L15.67 18 10 14.27 4.33 18l1.97-6.83L1 7.34h6.61z"/></svg>
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.39 6.34H19l-5.3 3.83L15.67 18 10 14.27 4.33 18l1.97-6.83L1 7.34h6.61z"/></svg>
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.39 6.34H19l-5.3 3.83L15.67 18 10 14.27 4.33 18l1.97-6.83L1 7.34h6.61z"/></svg>
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.39 6.34H19l-5.3 3.83L15.67 18 10 14.27 4.33 18l1.97-6.83L1 7.34h6.61z"/></svg>
+        </div>
+        <blockquote>"Very new and clean property. Parking was spacious and the lift made it easy with luggage. Great value for money in this area."</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">AM</div>
+          <div>
+            <div class="testimonial-name">Aruna Mahesh</div>
+            <div class="testimonial-role">Weekend Stay</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== LOCATION ========== -->
+<section class="location" id="location">
+  <div class="container">
+    <div class="location-grid">
+      <div class="location-map reveal">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3830.0!2d77.8!3d15.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDU0JzAwLjAiTiA3N8KwNDgnMDAuMCJF!5e0!3m2!1sen!2sin!4v1700000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="location-info">
+        <span class="section-label reveal">Find Us</span>
+        <h2 class="section-title reveal reveal-delay-1">Our Location</h2>
+        <p class="section-desc reveal reveal-delay-2">Conveniently located in Jammichedu, near Gadwal Town — easily accessible from major roads and just minutes from the town centre.</p>
+        <div class="location-details">
+          <div class="location-detail reveal reveal-delay-2">
+            <div class="location-detail-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <div class="location-detail-text">
+              <h4>Address</h4>
+              <p>Jammichedu, Near Gadwal Town,<br>Jogulamba Gadwal District,<br>Telangana — 509125</p>
+            </div>
+          </div>
+          <div class="location-detail reveal reveal-delay-3">
+            <div class="location-detail-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            </div>
+            <div class="location-detail-text">
+              <h4>Phone</h4>
+              <p>+91 98765 43210</p>
+            </div>
+          </div>
+          <div class="location-detail reveal reveal-delay-4">
+            <div class="location-detail-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <div class="location-detail-text">
+              <h4>Email</h4>
+              <p>info@vajraabhinandan.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="location-directions reveal reveal-delay-4">
+          <a href="https://maps.app.goo.gl/ZjUEErP7Zs2jduAA7" target="_blank" rel="noopener noreferrer">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+            Get Directions
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT CTA ========== -->
+<section class="contact-cta" id="contact">
+  <div class="container">
+    <span class="section-label reveal">Get In Touch</span>
+    <h2 class="section-title reveal reveal-delay-1">Ready to Book<br>Your Stay?</h2>
+    <p class="section-desc reveal reveal-delay-2">Whether it's a comfortable room for the night or a grand banquet for your celebration, we're here to make it perfect.</p>
+    <div class="contact-methods reveal reveal-delay-3">
+      <a href="tel:+919876543210" class="contact-method">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        <div>
+          <div class="contact-method-label">Call Us</div>
+          <div class="contact-method-value">+91 98765 43210</div>
+        </div>
+      </a>
+      <a href="https://wa.me/919876543210" target="_blank" class="contact-method">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <div>
+          <div class="contact-method-label">WhatsApp</div>
+          <div class="contact-method-value">+91 98765 43210</div>
+        </div>
+      </a>
+      <a href="mailto:info@vajraabhinandan.com" class="contact-method">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        <div>
+          <div class="contact-method-label">Email</div>
+          <div class="contact-method-value">info@vajraabhinandan.com</div>
+        </div>
+      </a>
+    </div>
+    <a href="tel:+919876543210" class="btn-primary reveal reveal-delay-4">Reserve Your Stay Now</a>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <div class="logo-icon">VA</div>
+          <div class="logo-text">Vajra <span>Abhinandan</span></div>
+        </a>
+        <p class="footer-tagline">Premium hospitality in the heart of Telangana. Where comfort meets elegance.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="#about">About Us</a>
+          <a href="#rooms">Our Rooms</a>
+          <a href="#banquet">Banquet Halls</a>
+          <a href="#amenities">Amenities</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="tel:+919876543210">+91 98765 43210</a>
+          <a href="mailto:info@vajraabhinandan.com">info@vajraabhinandan.com</a>
+          <a href="https://maps.app.goo.gl/ZjUEErP7Zs2jduAA7" target="_blank">Get Directions</a>
+        </div>
+        <div class="footer-col">
+          <h4>Policies</h4>
+          <a href="#">Check-in: 12:00 PM</a>
+          <a href="#">Check-out: 11:00 AM</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Vajra Abhinandan Lodge. All rights reserved.</span>
+      <span>Jammichedu, Near Gadwal Town, Telangana</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Navbar scroll effect
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// Mobile nav toggle
+function toggleNav() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('navLinks').classList.remove('open');
+  });
+});
+
+// Scroll reveal
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+reveals.forEach(el => observer.observe(el));
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
