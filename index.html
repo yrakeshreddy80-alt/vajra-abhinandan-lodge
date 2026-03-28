@@ -1195,7 +1195,7 @@ body {
 
 <!-- ========== HERO ========== -->
 <section class="hero" id="hero">
-  <img src="images/hero-bg.jpeg" alt="Vajra Abhinandan Lodge" class="hero-real-bg" onerror="this.style.display='none'">
+  <img src="images/hero-bg.jpg" alt="Vajra Abhinandan Lodge" class="hero-real-bg" data-fallback="images/hero-bg.jpeg">
   <div class="hero-bg"></div>
   <div class="hero-pattern"></div>
   <div class="hero-content">
@@ -1227,7 +1227,7 @@ body {
     <div class="welcome-grid">
       <div class="welcome-visual reveal">
         <div class="welcome-img-main">
-          <img src="images/hotel-exterior.jpeg" alt="Vajra Abhinandan Lodge Exterior" class="real-img" onerror="this.parentElement.classList.remove('has-img');this.style.display='none'" onload="this.parentElement.classList.add('has-img')">
+          <img src="images/hotel-exterior.jpg" alt="Vajra Abhinandan Lodge Exterior" class="real-img" data-fallback="images/hotel-exterior.jpeg">
           <div class="img-placeholder">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
             <span>Hotel Exterior Photo</span>
@@ -1312,7 +1312,7 @@ body {
     <div class="rooms-grid">
       <div class="room-card reveal">
         <div class="room-img">
-          <img src="images/room-standard.jpg" alt="Standard AC Room" class="real-img" onerror="this.parentElement.classList.remove('has-img');this.style.display='none'" onload="this.parentElement.classList.add('has-img')">
+          <img src="images/room-standard.jpg" alt="Standard AC Room" class="real-img" data-fallback="images/room-standard.jpeg">
           <div class="img-placeholder">
             <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
             <span>Room Photo</span>
@@ -1336,7 +1336,7 @@ body {
       <div class="room-card reveal reveal-delay-1">
         <div class="room-img">
           <div class="room-badge">Popular</div>
-          <img src="images/room-deluxe.jpg" alt="Deluxe AC Room" class="real-img" onerror="this.parentElement.classList.remove('has-img');this.style.display='none'" onload="this.parentElement.classList.add('has-img')">
+          <img src="images/room-deluxe.jpg" alt="Deluxe AC Room" class="real-img" data-fallback="images/room-deluxe.jpeg">
           <div class="img-placeholder">
             <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
             <span>Room Photo</span>
@@ -1361,7 +1361,7 @@ body {
       <div class="room-card reveal reveal-delay-2">
         <div class="room-img">
           <div class="room-badge">Premium</div>
-          <img src="images/room-suite.jpg" alt="Suite Room" class="real-img" onerror="this.parentElement.classList.remove('has-img');this.style.display='none'" onload="this.parentElement.classList.add('has-img')">
+          <img src="images/room-suite.jpg" alt="Suite Room" class="real-img" data-fallback="images/room-suite.jpeg">
           <div class="img-placeholder">
             <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
             <span>Room Photo</span>
@@ -1509,35 +1509,35 @@ body {
     </div>
     <div class="gallery-grid reveal reveal-delay-2">
       <div class="gallery-item">
-        <img src="images/gallery-exterior.jpg" alt="Lodge Exterior" class="real-img" onerror="this.parentElement.classList.remove('has-img');this.style.display='none'" onload="this.parentElement.classList.add('has-img')">
+        <img src="images/gallery-exterior.jpg" alt="Lodge Exterior" class="real-img" data-fallback="images/gallery-exterior.jpeg">
         <div class="img-placeholder">
           <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
           <span>Lodge Exterior</span>
         </div>
       </div>
       <div class="gallery-item">
-        <img src="images/gallery-banquet.jpg" alt="Banquet Hall" class="real-img" onerror="this.parentElement.classList.remove('has-img');this.style.display='none'" onload="this.parentElement.classList.add('has-img')">
+        <img src="images/gallery-banquet.jpg" alt="Banquet Hall" class="real-img" data-fallback="images/gallery-banquet.jpeg">
         <div class="img-placeholder">
           <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
           <span>Banquet Hall</span>
         </div>
       </div>
       <div class="gallery-item">
-        <img src="images/gallery-room.jpg" alt="Deluxe Room" class="real-img" onerror="this.parentElement.classList.remove('has-img');this.style.display='none'" onload="this.parentElement.classList.add('has-img')">
+        <img src="images/gallery-room.jpg" alt="Deluxe Room" class="real-img" data-fallback="images/gallery-room.jpeg">
         <div class="img-placeholder">
           <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
           <span>Deluxe Room</span>
         </div>
       </div>
       <div class="gallery-item">
-        <img src="images/gallery-parking.jpg" alt="Parking Area" class="real-img" onerror="this.parentElement.classList.remove('has-img');this.style.display='none'" onload="this.parentElement.classList.add('has-img')">
+        <img src="images/gallery-parking.jpg" alt="Parking Area" class="real-img" data-fallback="images/gallery-parking.jpeg">
         <div class="img-placeholder">
           <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
           <span>Parking Area</span>
         </div>
       </div>
       <div class="gallery-item">
-        <img src="images/gallery-reception.jpg" alt="Reception" class="real-img" onerror="this.parentElement.classList.remove('has-img');this.style.display='none'" onload="this.parentElement.classList.add('has-img')">
+        <img src="images/gallery-reception.jpg" alt="Reception" class="real-img" data-fallback="images/gallery-reception.jpeg">
         <div class="img-placeholder">
           <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
           <span>Reception</span>
@@ -1736,6 +1736,47 @@ body {
 </footer>
 
 <script>
+// Smart image loader — tries .jpg, .jpeg, .png automatically
+document.querySelectorAll('img[data-fallback]').forEach(img => {
+  const fallbacks = [];
+  const src = img.src;
+  const base = src.replace(/\.(jpg|jpeg|png|webp)$/i, '');
+  
+  // Build fallback chain: jpeg, png, webp
+  ['jpeg', 'jpg', 'png', 'webp'].forEach(ext => {
+    const url = base + '.' + ext;
+    if (url !== src) fallbacks.push(url);
+  });
+  
+  let attempt = 0;
+  
+  img.onerror = function() {
+    if (attempt < fallbacks.length) {
+      this.src = fallbacks[attempt];
+      attempt++;
+    } else {
+      // All formats failed — hide image, show placeholder
+      this.style.display = 'none';
+      if (this.parentElement) {
+        this.parentElement.classList.remove('has-img');
+      }
+    }
+  };
+  
+  img.onload = function() {
+    if (this.parentElement) {
+      this.parentElement.classList.add('has-img');
+    }
+  };
+  
+  // Re-trigger load for images that may have already errored
+  if (img.complete && img.naturalWidth === 0) {
+    img.onerror();
+  } else if (img.complete && img.naturalWidth > 0) {
+    img.onload();
+  }
+});
+
 // Navbar scroll effect
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
