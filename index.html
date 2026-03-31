@@ -1566,64 +1566,196 @@ body {
     </div>
   </div>
 </section>
-
-<section class="banquet" id="banquet">
+<section class="nearby" id="nearby">
   <div class="container">
-    <span class="section-label reveal">Events & Celebrations</span>
-    <h2 class="section-title reveal reveal-delay-1" style="color: var(--cream);">Our Banquet Halls</h2>
-    <p class="section-desc reveal reveal-delay-2">Two elegantly designed banquet halls, perfect for weddings, receptions, corporate events, and family celebrations — supported by our dedicated kitchen.</p>
     
-    <div class="banquet-grid">
-      <div class="banquet-card reveal">
-        <div class="banquet-card-num">01</div>
-        <h3>Grand Banquet Hall</h3>
-        <p>Our spacious grand hall accommodates large gatherings with elegant décor, professional lighting, and a sound system — ideal for weddings and grand receptions.</p>
-        <div class="banquet-card-features">
-          <div class="banquet-card-feature">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            Up to 300 Guests
-          </div>
-          <div class="banquet-card-feature">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            Stage & Lighting
-          </div>
-          <div class="banquet-card-feature">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            Dedicated Kitchen
-          </div>
-          <div class="banquet-card-feature">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            AC & Ventilation
-          </div>
-        </div>
+    <div class="nearby-header">
+      <span class="section-label reveal">Explore</span>
+      <h2 class="section-title reveal reveal-delay-1">Nearby Attractions</h2>
+      <p class="section-desc reveal reveal-delay-2">
+        Discover spiritual landmarks, heritage sites, and scenic experiences just minutes away from our lodge.
+      </p>
+    </div>
+
+    <div class="nearby-grid">
+
+      <div class="nearby-card reveal">
+        <h3>Jogulamba Temple</h3>
+        <span>~25 km</span>
+        <p>One of the 18 Shakti Peethas, offering a powerful spiritual experience.</p>
       </div>
-      <div class="banquet-card reveal reveal-delay-1">
-        <div class="banquet-card-num">02</div>
-        <h3>Conference Hall</h3>
-        <p>A versatile mid-size hall perfect for corporate meetings, birthday parties, engagement ceremonies, and intimate family gatherings.</p>
-        <div class="banquet-card-features">
-          <div class="banquet-card-feature">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            Up to 100 Guests
-          </div>
-          <div class="banquet-card-feature">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            Projector & Screen
-          </div>
-          <div class="banquet-card-feature">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            Catering Available
-          </div>
-          <div class="banquet-card-feature">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            Sound System
-          </div>
-        </div>
+
+      <div class="nearby-card reveal reveal-delay-1">
+        <h3>Alampur Navabrahma Temples</h3>
+        <span>~25 km</span>
+        <p>Ancient Chalukyan temples known for architecture and heritage beauty.</p>
+      </div>
+
+      <div class="nearby-card reveal reveal-delay-2">
+        <h3>Jurala Dam</h3>
+        <span>~35 km</span>
+        <p>Enjoy peaceful views of the Krishna River and beautiful sunsets.</p>
+      </div>
+
+      <div class="nearby-card reveal reveal-delay-3">
+        <h3>Gadwal Fort</h3>
+        <span>~20 km</span>
+        <p>Historic fort reflecting royal heritage and cultural significance.</p>
+      </div>
+
+    </div>
+
+    <div class="things-box reveal">
+      <h3>Things To Do</h3>
+      <div class="things-list">
+        <span>Temple visits & spiritual experiences</span>
+        <span>Photography & sightseeing</span>
+        <span>Explore local markets & cuisine</span>
+        <span>Relax near river & nature spots</span>
       </div>
     </div>
+
   </div>
 </section>
 
+<style>/* ============ NEARBY SECTION (MATCHED DESIGN) ============ */
+
+.nearby {
+  padding: 120px 0;
+  background: var(--section-light);
+}
+
+.nearby-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.nearby-header .section-desc {
+  margin: 0 auto;
+}
+
+.nearby-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.nearby-card {
+  background: var(--warm-white);
+  padding: 32px;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(0,0,0,0.04);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.nearby-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--gold-gradient);
+}
+
+.nearby-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+.nearby-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  color: var(--midnight);
+}
+
+.nearby-card span {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  margin-bottom: 12px;
+}
+
+.nearby-card p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* THINGS TO DO */
+
+.things-box {
+  margin-top: 80px;
+  padding: 50px;
+  background: var(--midnight);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.things-box::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(212,175,55,0.08), transparent 70%);
+}
+
+.things-box h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: var(--cream);
+  margin-bottom: 30px;
+}
+
+.things-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.things-list span {
+  padding: 12px 22px;
+  border-radius: 30px;
+  border: 1px solid rgba(212,175,55,0.3);
+  color: var(--gold-light);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  transition: var(--transition-smooth);
+}
+
+.things-list span:hover {
+  background: var(--gold-gradient);
+  color: var(--warm-black);
+  box-shadow: var(--shadow-gold);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px) {
+  .nearby-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .nearby-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .things-box {
+    padding: 30px;
+  }
+}</style>
 <section class="amenities" id="amenities">
   <div class="container">
     <div class="amenities-header">
